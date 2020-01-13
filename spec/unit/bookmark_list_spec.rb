@@ -1,11 +1,11 @@
 require 'bookmark_list'
 
 describe BookmarkList do
-  let(:bookmarks){["google", "facebook", "Twitter"]}
+  let(:subject){BookmarkList.new(Bookmark)}
 
   describe "#view_bookmarks" do
     it "shows a list of the bookmarks" do
-      expect(subject.show_bookmarks).to eq bookmarks
+      expect(subject.show_bookmarks).to include 'http://www.google.com'
     end
   end
 end

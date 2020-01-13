@@ -6,7 +6,7 @@ require 'simplecov-console'
 require_relative './../controller.rb'
 # require 'web_helper'
 
-Capybara.app = Bookmark
+Capybara.app = Bookmark_Manager
 
 ENV['RACK_ENV'] = 'test'
 

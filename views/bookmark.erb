@@ -1,1 +1,7 @@
-<%=@bookmark_list.show_bookmarks%>
+
+<%= @list.each { |item| item.url.to_s } %>
+
+<!--
+  <li><%= item.url %></li>
+  <%= end %>
+</ul>-->
