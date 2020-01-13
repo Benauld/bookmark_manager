@@ -1,7 +1,7 @@
 
-<%= @list.each { |item| item.url.to_s } %>
 
-<!--
-  <li><%= item.url %></li>
-  <%= end %>
-</ul>-->
+<ul>
+  <% @list.each do |bookmark| %>
+    <li><%= bookmark.print %></li>
+  <% end %>
+</ul>
