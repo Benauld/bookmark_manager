@@ -10,9 +10,12 @@ class BookmarkList
   end
 
   def show_bookmarks
-    con = PG.connect(dbname: 'bookmark_manager')
-
-    result = con.exec('SELECT * FROM bookmarks;')
+    if ENV['ENVIRONMENT'] == "test"
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+    else
+      connection = PG.connect(dbname: 'bookmark_manager')
+    end
+    result = connection.exec('SELECT * FROM bookmarks;')
 
     result.each do |bookmark|
       @bookmarks << @bookmark_class.new(bookmark['id'], bookmark['url'])
