@@ -1,7 +1,10 @@
-
-
-<ul>
-  <% @list.each do |bookmark| %>
-    <li><%= bookmark.print %></li>
-  <% end %>
-</ul>
+<h1>Bookmark Manager</h1>
+<h2></h2>
+<div>
+  <ul style="list-style-type:none">
+      <li>Id          URL</li>
+    <% @list.each do |bookmark| %>
+      <li><%= bookmark.id %> : <a href="<%= bookmark.url %>"><%= bookmark.url %></a></li>
+    <% end %>
+  </ul>
+</div>
