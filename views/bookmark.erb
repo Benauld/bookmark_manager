@@ -2,9 +2,31 @@
 <h2></h2>
 <div>
   <ul style="list-style-type:none">
-      <li>Id          URL</li>
-    <% @list.each do |bookmark| %>
-      <li><%= bookmark.id %> : <a href="<%= bookmark.url %>"><%= bookmark.url %></a></li>
+      <li>   Id          URL</li>
+    <% session[:list].each do |bookmark| %>
+      <li class="bookmark"> <%= bookmark.title %> : 
+        
+        <!-- displays line -->
+        <a href="<%= bookmark.url %>"><%= bookmark.url %></a>
+        
+        <!-- delete line -->
+        <form action="/delete" method="post">
+          <input type='hidden' name=bookmark_id value=<%= bookmark.id %>>
+          <input type="submit" value="Delete">
+        </form>
+      </li>
     <% end %>
   </ul>
 </div>
+
+<div>
+<!-- add line -->
+<br>
+<form action="/add" method="post">
+  <input type=text name=create_title value="enter title">
+  <input type=text name=create_url value="enter url">
+  <input type="submit" value="Add new">
+</form>
+<br>
+</div>
+<div>

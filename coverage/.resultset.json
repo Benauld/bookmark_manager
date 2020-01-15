@@ -1,6 +1,30 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/benauld/Projects/Bookmark_manager/spec/features/creating_bookmarks_spec.rb": [
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/benauld/Projects/Bookmark_manager/spec/features/deleting_bookmarks_spec.rb": [
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/benauld/Projects/Bookmark_manager/spec/features/testing_infrastructure_spec.rb": [
         null,
         null,
@@ -20,21 +44,35 @@
         null,
         null
       ],
-      "/Users/benauld/Projects/Bookmark_manager/spec/unit/bookmark_list_spec.rb": [
+      "/Users/benauld/Projects/Bookmark_manager/spec/unit/bookmark_spec.rb": [
         null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        2,
         null,
         1,
         null,
         1,
         1,
         1,
+        null,
+        null,
         1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         1,
         1,
         1,
@@ -44,14 +82,14 @@
         1,
         1,
         1,
+        1,
         null,
-        null,
-        null,
+        1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1579015764
+    "timestamp": 1579103205
   }
 }

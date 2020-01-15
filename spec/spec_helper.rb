@@ -20,7 +20,6 @@ SimpleCov.start
 # For accurate test coverage measurements, require your code AFTER 'SimpleCov.start'
 RSpec.configure do |config|
   config.before(:each) do
-    p "how often am I calling truncate from spec helper"
     setup_test_database
   end
   
